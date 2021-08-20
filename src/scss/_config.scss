@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap);
+
+// icons
+
+// colores
+$color1: #404040;
+$color2: #D3D3D3;
+$color3: black;
+$color4: navy;
+$color5: forestgreen;
+$color-menu: $gray-900;
+
+//colores tecnologías
+$color-general: $gray-200;
+$color-demand: $indigo;
+$color-pv: $yellow;
+$color-wind: $purple;
+$color-battery: $blue;
+$color-diesel: $gray-900;
+$color-natgas: $orange;
+$color-hydrogen: $cyan;
+$color-biomass: forestgreen;
+$color-hydro: navy;
+$color-results: peachpuff;
+
+// font-families
+$ff-1: Helvetica, Arial, sans-serif;
+
+// medidas
+$navbar-height: 3em;
+
+// breakpoints
+$small: 600px;
+$medium: 960px;
+$large: 1264px;
+$extra-large: 1904px;
+
+@mixin desde ($size) {
+    @media screen and (min-width: $size) {
+        @content;
+      }
+}
+
+@mixin hasta ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+      }
+}
+
+@mixin desde_hasta($desde, $hasta) {
+    @media screen and(min-width: $desde) and (max-width: $hasta) {
+        @content
+    }
+}
